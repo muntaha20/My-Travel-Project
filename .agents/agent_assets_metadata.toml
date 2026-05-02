@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "YlvY-ZBkfgh9lPsLqUKq2"
+uri = "file://dream-travel-atlas.zip"
+type = "unspecified"
+title = "Dream Travel Atlas — Source Code"
