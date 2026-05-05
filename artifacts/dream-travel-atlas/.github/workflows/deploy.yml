@@ -39,6 +39,14 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Verify build output
+        run: |
+          echo "=== dist/ contents ==="
+          ls -la dist/
+          echo "=== Checking base path in index.html ==="
+          grep -o 'src="[^"]*"' dist/index.html | head -5
+          grep -o 'href="[^"]*"' dist/index.html | head -5
+
       - name: Add 404 fallback for SPA routing
         run: cp dist/index.html dist/404.html
 
